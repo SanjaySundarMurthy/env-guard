@@ -1,4 +1,8 @@
-# env-guard
+﻿# env-guard
+
+[![CI](https://github.com/SanjaySundarMurthy/env-guard/actions/workflows/ci.yml/badge.svg)](https://github.com/SanjaySundarMurthy/env-guard/actions/workflows/ci.yml)
+[![Python](https://img.shields.io/pypi/pyversions/env-guard-cli)](https://pypi.org/project/env-guard-cli/)
+[![PyPI](https://img.shields.io/pypi/v/env-guard-cli)](https://pypi.org/project/env-guard-cli/)
 
 **Environment variable validation, secret detection, and .env file management CLI.**
 
@@ -212,3 +216,50 @@ MIT License — see [LICENSE](LICENSE) for details.
 ## Author
 
 **Sanjay Sundar Murthy** — [GitHub](https://github.com/SanjaySundarMurthy)
+
+
+## 🐳 Docker
+
+Run without installing Python:
+
+```bash
+# Build the image
+docker build -t env-guard .
+
+# Run
+docker run --rm env-guard --help
+
+# Example with volume mount
+docker run --rm -v ${PWD}:/workspace env-guard [command] /workspace
+```
+
+Or pull from the container registry:
+
+```bash
+docker pull ghcr.io/SanjaySundarMurthy/env-guard:latest
+docker run --rm ghcr.io/SanjaySundarMurthy/env-guard:latest --help
+```
+
+## 🤝 Contributing
+
+Contributions are welcome! Here's how:
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/amazing-feature`
+3. Commit changes: `git commit -m 'Add amazing feature'`
+4. Push to branch: `git push origin feature/amazing-feature`
+5. Open a Pull Request
+
+Please ensure tests pass before submitting:
+
+```bash
+pip install env-guard-cli
+pytest -v
+ruff check .
+```
+
+## 🔗 Links
+
+- **PyPI**: [https://pypi.org/project/env-guard-cli/](https://pypi.org/project/env-guard-cli/)
+- **GitHub**: [https://github.com/SanjaySundarMurthy/env-guard](https://github.com/SanjaySundarMurthy/env-guard)
+- **Issues**: [https://github.com/SanjaySundarMurthy/env-guard/issues](https://github.com/SanjaySundarMurthy/env-guard/issues)
