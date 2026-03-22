@@ -2,22 +2,19 @@
 
 from __future__ import annotations
 
-import json
 import os
-import textwrap
-from pathlib import Path
 
 import pytest
 
+from env_guard.models import VarType
 from env_guard.parser import (
+    _detect_type,
     find_env_files,
     generate_env_example,
     generate_schema,
     parse_env_file,
     parse_schema_file,
-    _detect_type,
 )
-from env_guard.models import VarType
 
 
 class TestParseEnvFile:

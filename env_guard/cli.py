@@ -11,7 +11,7 @@ import click
 from rich.console import Console
 
 from env_guard import __version__
-from env_guard.diff import compare_with_example, diff_env_files, sync_env_with_example
+from env_guard.diff import diff_env_files, sync_env_with_example
 from env_guard.models import ScanResult
 from env_guard.output import (
     render_diff,

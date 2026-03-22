@@ -2,11 +2,6 @@
 
 from __future__ import annotations
 
-import textwrap
-from pathlib import Path
-
-import pytest
-
 from env_guard.diff import (
     compare_with_example,
     diff_env_files,
@@ -14,7 +9,6 @@ from env_guard.diff import (
     sync_env_with_example,
 )
 from env_guard.models import EnvFile, EnvVar, IssueType
-from env_guard.parser import parse_env_file
 
 
 def make_env(variables: dict[str, str], path: str = ".env") -> EnvFile:

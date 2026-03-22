@@ -2,11 +2,8 @@
 
 from __future__ import annotations
 
-import pytest
-
 from env_guard.models import (
     EnvFile,
-    EnvIssue,
     EnvVar,
     IssueType,
     Severity,

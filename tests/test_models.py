@@ -5,6 +5,10 @@ from __future__ import annotations
 import pytest
 
 from env_guard.models import (
+    NAMING_PATTERN,
+    SECRET_KEY_PATTERNS,
+    SECRET_VALUE_PATTERNS,
+    WEAK_SECRET_PATTERNS,
     EnvDiff,
     EnvFile,
     EnvIssue,
@@ -18,12 +22,7 @@ from env_guard.models import (
     follows_naming_convention,
     is_secret_key,
     is_weak_secret,
-    SECRET_KEY_PATTERNS,
-    SECRET_VALUE_PATTERNS,
-    WEAK_SECRET_PATTERNS,
-    NAMING_PATTERN,
 )
-
 
 # ---------- Severity ----------
 

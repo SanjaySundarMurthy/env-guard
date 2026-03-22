@@ -12,9 +12,7 @@ from env_guard.models import (
     IssueType,
     SecretFinding,
     Severity,
-    is_secret_key,
 )
-
 
 # File extensions to scan for secrets
 SCANNABLE_EXTENSIONS = {

@@ -2,12 +2,7 @@
 
 from __future__ import annotations
 
-import textwrap
-from pathlib import Path
-
-import pytest
-
-from env_guard.models import EnvFile, EnvVar, Severity
+from env_guard.models import EnvFile, EnvVar
 from env_guard.scanner import (
     check_gitignore_for_env,
     scan_directory_for_secrets,

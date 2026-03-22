@@ -183,8 +183,8 @@ env-guard init --force                      # Overwrite existing
 
 | Grade | Score   | Description                    |
 |-------|---------|--------------------------------|
-| A+    | 100     | Perfect — no issues            |
-| A     | 90-99   | Excellent — minor issues only  |
+| A+    | 95-100  | Perfect — no issues            |
+| A     | 90-94   | Excellent — minor issues only  |
 | B     | 80-89   | Good — some warnings           |
 | C     | 70-79   | Fair — needs attention         |
 | D     | 60-69   | Poor — significant issues      |
